@@ -98,8 +98,7 @@ export default function Home() {
             roman="IV"
           />
           <p className="mt-10 max-w-2xl text-cream/70 leading-relaxed">
-            Eighty-three people, across social media, events, design, video,
-            the podcast, content, and performance.
+            The selected list will be published here.
           </p>
           <div className="mt-10">
             <Button to="/results">See the selected members</Button>
