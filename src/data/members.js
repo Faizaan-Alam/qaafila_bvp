@@ -1,0 +1,167 @@
+import imgAagam from "../assets/images/members/aagam.jpg";
+import imgAarush from "../assets/images/members/aarush.jpg";
+import imgAbdul from "../assets/images/members/abdul.jpg";
+import imgAnika from "../assets/images/members/anika.jpg";
+import imgArshia from "../assets/images/members/arshia.jpg";
+import imgBhuvi from "../assets/images/members/bhuvi-2.jpg";
+import imgFarhan from "../assets/images/members/farhan.jpg";
+import imgFaizaan from "../assets/images/members/faizaan.jpg";
+import imgHarshtej from "../assets/images/members/harshtej-2.jpg";
+import imgIsha from "../assets/images/members/isha.jpg";
+import imgMoksha from "../assets/images/members/moksha.jpg";
+import imgPaarth from "../assets/images/members/paarth.jpg";
+import imgRachit from "../assets/images/members/rachit.jpg";
+import imgRitesh from "../assets/images/members/ritesh.jpg";
+import imgRitvik from "../assets/images/members/ritvik.jpg";
+import imgVanshikaGoel from "../assets/images/members/vanshika-goel.jpg";
+import imgVasvi from "../assets/images/members/vasvi.jpg";
+
+function seat(id, name, position, department = "", image = "") {
+  return {
+    id,
+    name,
+    position,
+    department,
+    image,
+    bio: "",
+  };
+}
+/**
+ * Known members only. Empty strings are intentional placeholders.
+ * Do not invent last names, bios, or social handles.
+ *
+ * Portraits live in src/assets/images/members/.
+ * Source drops: core/, heads/, hall of fame/ at the repo root.
+ */
+export const teacherIncharge = seat(
+  "teacher-incharge",
+  "Neetu",
+  "Teacher Incharge",
+);
+export const president = seat(
+  "president",
+  "Faizaan Alam",
+  "President",
+  "",
+  imgFaizaan,
+);
+export const ishaBhatti = seat(
+  "isha-bhatti",
+  "Isha Bhatti",
+  "Co-President",
+  "",
+  imgIsha,
+);
+export const vicePresidents = [
+  seat("vp-ritesh", "Ritesh", "Vice President", "", imgRitesh),
+  seat("vp-arshia", "Arshia", "Vice President", "", imgArshia),
+  seat("vp-moksha", "Moksha", "Vice President", "", imgMoksha),
+];
+export const culturalSecretaries = [
+  seat("cs-rahul", "Rahul", "Cultural Secretary"),
+  seat("cs-bhumika", "Bhumika", "Cultural Secretary"),
+];
+export const generalSecretaries = [
+  seat("gs-harshtej", "Harshtej", "General Secretary", "", imgHarshtej),
+  seat("gs-rachit", "Rachit", "General Secretary", "", imgRachit),
+];
+export const jointSecretaries = [];
+export const abdul = seat(
+  "head-abdul",
+  "Abdul",
+  "Head",
+  "PR and Performance",
+  imgAbdul,
+);
+export const anika = seat(
+  "head-anika",
+  "Anika",
+  "Head",
+  "PR and Performance",
+  imgAnika,
+);
+export const headTeams = [
+  {
+    title: "PR and Performance",
+    members: [abdul, anika],
+  },
+  {
+    title: "SM and Publicity",
+    members: [
+      seat("head-sm-ritvik", "Ritvik", "Head", "SM and Publicity", imgRitvik),
+      seat("head-sm-farhan", "Farhan", "Head", "SM and Publicity", imgFarhan),
+    ],
+  },
+  {
+    title: "Content and Documentation",
+    members: [
+      seat(
+        "head-content-aagam",
+        "Aagam",
+        "Head",
+        "Content and Documentation",
+        imgAagam,
+      ),
+      seat(
+        "head-content-vanshika-dhand",
+        "Vanshika Dhand",
+        "Head",
+        "Content and Documentation",
+      ),
+    ],
+  },
+  {
+    title: "Event Management",
+    members: [
+      seat(
+        "head-events-vanshika-goel",
+        "Vanshika Goel",
+        "Head",
+        "Event Management",
+        imgVanshikaGoel,
+      ),
+      seat("head-events-bhuvi", "Bhuvi", "Head", "Event Management", imgBhuvi),
+    ],
+  },
+  {
+    title: "Video Editing",
+    members: [
+      seat("head-video-bharat", "Bharat", "Head", "Video Editing"),
+      seat("head-video-pavitra", "Pavitra", "Head", "Video Editing"),
+    ],
+  },
+  {
+    title: "Design",
+    members: [
+      seat("head-design-aarush", "Aarush", "Head", "Design", imgAarush),
+      seat("head-design-vasvi", "Vasvi", "Head", "Design", imgVasvi),
+    ],
+  },
+  {
+    title: "Book Club",
+    members: [
+      seat("head-book-suhavi", "Suhavi", "Head", "Book Club"),
+      seat("head-book-paarth", "Paarth", "Head", "Book Club", imgPaarth),
+    ],
+  },
+  {
+    title: "Podcast",
+    members: [president, abdul, anika],
+  },
+];
+export const heads = headTeams.flatMap((team) => team.members);
+export const executiveCommittee = [
+  president,
+  ishaBhatti,
+  ...vicePresidents,
+  ...culturalSecretaries,
+  ...generalSecretaries,
+  ...jointSecretaries,
+];
+export const executives = [];
+export const featuredMemberIds = ["president", "isha-bhatti"];
+export const namedCoreCommittee = [
+  ...vicePresidents,
+  ...culturalSecretaries,
+  ...generalSecretaries,
+];
