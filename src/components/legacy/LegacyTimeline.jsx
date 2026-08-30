@@ -3,13 +3,17 @@ import { isFilled } from "../../utils/format";
 import { fadeUp } from "../../utils/motion";
 import { founding } from "../../data/legacy";
 
-function SmallPortrait({ person }) {
+function SmallPortrait({ person, compact = false }) {
   if (!isFilled(person.image)) return null;
   return (
     <img
       src={person.image}
       alt={person.name}
-      className="h-64 w-auto md:h-80 lg:h-96 object-contain paper-edge shrink-0"
+      className={
+        compact
+          ? "h-28 w-auto sm:h-40 md:h-52 lg:h-64 object-contain paper-edge shrink-0"
+          : "h-64 w-auto md:h-80 lg:h-96 object-contain paper-edge shrink-0"
+      }
       loading="lazy"
     />
   );
@@ -27,18 +31,37 @@ const ROLE_PLURALS = {
   Treasurer: "Treasurers",
 };
 
-function PersonList({ label, people }) {
+function PersonList({ label, people, inline = false }) {
   if (!people?.length) return null;
   const heading =
     people.length > 1 ? (ROLE_PLURALS[label] ?? `${label}s`) : label;
   return (
-    <div>
+    <div className={inline ? "sm:col-span-2" : undefined}>
       <p className="kicker">{heading}</p>
-      <ul className="mt-3 flex flex-col gap-3">
+      <ul
+        className={
+          inline
+            ? `mt-3 grid gap-x-6 gap-y-6 ${
+                people.length >= 3
+                  ? "grid-cols-3"
+                  : people.length === 2
+                    ? "grid-cols-2"
+                    : "grid-cols-1"
+              }`
+            : "mt-3 flex flex-col gap-3"
+        }
+      >
         {people.map((person) => (
-          <li key={person.name} className="flex items-start gap-4">
-            <SmallPortrait person={person} />
-            <p className="font-display text-2xl md:text-3xl text-cream leading-tight">
+          <li
+            key={person.name}
+            className={
+              inline
+                ? "flex flex-col items-start gap-3"
+                : "flex items-start gap-4"
+            }
+          >
+            <SmallPortrait person={person} compact={inline} />
+            <p className="font-display text-2xl md:text-3xl text-cream leading-tight whitespace-nowrap">
               {person.name}
             </p>
           </li>
@@ -53,7 +76,11 @@ function RoleGrid({ entry }) {
     <div className="grid sm:grid-cols-2 gap-8">
       <PersonList label="President" people={entry.presidents} />
       <PersonList label="Co-President" people={entry.coPresidents} />
-      <PersonList label="Vice President" people={entry.vicePresidents} />
+      <PersonList
+        label="Vice President"
+        people={entry.vicePresidents}
+        inline
+      />
       <PersonList
         label="General Secretary"
         people={entry.generalSecretaries}

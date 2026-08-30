@@ -13,26 +13,45 @@ const forthcomingBody = `
 <p>If you are a contributor, the contact page is where the journey continues.</p>
 `;
 /**
- * Placeholder journal entries. Not real Qaafila publications.
- * Replace titles, authors, dates and bodies with actual write-ups.
+ * Journal entries. Published pieces sit beside reserved pages.
  * Covers live in src/assets/images/writeups/.
  */
 export const writeups = [
   {
     id: "w-poetry-01",
-    slug: "a-poem-forthcoming",
-    title: "A Poem, Forthcoming",
-    author: "",
-    date: "",
+    slug: "dheeme-dhundh-se-janta-hun",
+    title: "Dheeme dhundh se janta hun",
+    author: "Faizaan Alam",
+    date: "August 2026",
     category: "Poetry",
     coverImage: poetry,
     excerpt:
-      "A reserved page in the journal. The poem will take its place here.",
-    content: forthcomingBody,
-    pullQuote: "The page is set. The words will follow.",
+      "Ek roz baarish ke mausam mein ek boond aayi thi, main baarish ko ab uss boond se jaanta hoon.",
+    content: `
+<p>Ek roz baarish ke mausam mein ek boond aayi thi,<br />
+Main baarish ko ab uss boond se jaanta hoon.</p>
+<p>Badal gaya hai mausam kashti kinare le aao,<br />
+Main apni kashti ko uske chhedon se jaanta hoon.</p>
+<p>Mere saaye ke ta’alluq mein ek parchhayi aayi thi,<br />
+Uss parchhayi ko bulao, main usse zara behtar jaanta hoon.</p>
+<p>Be-sabab hi sahi, ek rangeen aawaaz toh lagao,<br />
+Main aawaaz se nahi, aksar rangon se jaanta hoon.</p>
+<p>Na tegh chali na aawaaz uthi, bas ek saans haath chhod gayi thi,<br />
+Main mohabbat ko nahi, ab sirf khamoshi ko jaanta hoon.</p>
+<p>Vaade toh sab chhod ke aane ki baat karte the,<br />
+Main jhooth ko ab khaali alfaazon se jaanta hoon.</p>
+<p>Ek thandak ne mera aadha wajood tod diya,<br />
+Main apne tootne ko bhi sooni yaadon se jaanta hoon.</p>
+<p>Dil mein ab phool nahi, bas gehri lakeerein reh gayi,<br />
+Main mohabbat ko unhi nishanon se jaanta hoon.</p>
+<p>Har raat ek rooh jism ko jala deti hai,<br />
+Main jalti hui khamoshi ko ussi thandak se jaanta hoon.</p>
+<p>Maut ka saaya hota toh shayad sukoon mil jaata,<br />
+Main ab zindagi ko dheemi dhund se jaanta hoon.</p>
+`,
+    pullQuote: "Main ab zindagi ko dheemi dhund se jaanta hoon.",
     readingMinutes: 2,
     relatedSlugs: ["an-essay-forthcoming", "a-story-forthcoming"],
-    placeholder: true,
   },
   {
     id: "w-essay-01",
@@ -46,7 +65,7 @@ export const writeups = [
     content: forthcomingBody,
     pullQuote: "Conversation is a craft.",
     readingMinutes: 2,
-    relatedSlugs: ["a-poem-forthcoming", "a-review-forthcoming"],
+    relatedSlugs: ["dheeme-dhundh-se-janta-hun", "a-review-forthcoming"],
     placeholder: true,
   },
   {
@@ -61,7 +80,7 @@ export const writeups = [
     content: forthcomingBody,
     pullQuote: "A line can still change the temperature of a room.",
     readingMinutes: 2,
-    relatedSlugs: ["a-poem-forthcoming", "a-note-on-culture"],
+    relatedSlugs: ["dheeme-dhundh-se-janta-hun", "a-note-on-culture"],
     placeholder: true,
   },
   {
@@ -136,7 +155,7 @@ export const writeups = [
     content: forthcomingBody,
     pullQuote: "Language is how we keep each other company.",
     readingMinutes: 2,
-    relatedSlugs: ["an-essay-forthcoming", "a-poem-forthcoming"],
+    relatedSlugs: ["an-essay-forthcoming", "dheeme-dhundh-se-janta-hun"],
     placeholder: true,
   },
 ];
