@@ -2,7 +2,9 @@ import imgArshia from "../assets/images/members/arshia.jpg";
 import imgFaizaan from "../assets/images/members/faizaan.jpg";
 import imgIsha from "../assets/images/members/isha.jpg";
 import imgMoksha from "../assets/images/members/moksha.jpg";
+import imgNishchay from "../assets/images/legacy/nishchay.jpg";
 import imgRitesh from "../assets/images/members/ritesh.jpg";
+import imgSoumya from "../assets/images/legacy/soumya.jpg";
 
 function person(name, image = "") {
   return { name, image };
@@ -45,8 +47,8 @@ export const legacy = [
   },
   {
     year: "2025",
-    presidents: [person("Soumya Miglani")],
-    vicePresidents: [person("Nishchay"), person("Harshita")],
+    presidents: [person("Soumyaaa Miglani", imgSoumya)],
+    vicePresidents: [person("Nishchay", imgNishchay), person("Harshita")],
     generalSecretaries: [person("Dishant")],
     culturalSecretaries: [person("Utsav Singh Rao")],
     treasurers: [person("Dhruv")],

@@ -9,7 +9,7 @@ function SmallPortrait({ person }) {
     <img
       src={person.image}
       alt={person.name}
-      className="h-16 w-16 object-cover object-top paper-edge shrink-0"
+      className="h-64 w-auto md:h-80 lg:h-96 object-contain paper-edge shrink-0"
       loading="lazy"
     />
   );
@@ -36,7 +36,7 @@ function PersonList({ label, people }) {
       <p className="kicker">{heading}</p>
       <ul className="mt-3 flex flex-col gap-3">
         {people.map((person) => (
-          <li key={person.name} className="flex items-center gap-3">
+          <li key={person.name} className="flex items-start gap-4">
             <SmallPortrait person={person} />
             <p className="font-display text-2xl md:text-3xl text-cream leading-tight">
               {person.name}
