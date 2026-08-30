@@ -2,6 +2,8 @@
 
 **Where words find their people.**
 
+Live site: **[https://qaafila-bvp.vercel.app/](https://qaafila-bvp.vercel.app/)**
+
 Hi. I’m **Faizaan Alam**. I built this website for Qaafila during the 2026–27 tenure, while serving as President.
 
 If you’re a future president, a member, or someone who just landed here and wants to talk about the site, Qaafila, or anything around it, you can reach me here:
