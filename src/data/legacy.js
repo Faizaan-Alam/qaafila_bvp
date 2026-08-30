@@ -35,7 +35,8 @@ export const legacy = [
   },
   {
     year: "2025-26",
-    presidents: [person("Yash Bansal"), person("Anand Misra")],
+    presidents: [person("Yash Bansal")],
+    coPresidents: [person("Anand Misra")],
     vicePresidents: [person("Mansha"), person("Hasdeep")],
     generalSecretaries: [person("Saloni Gupta"), person("Bhavya Singla")],
     jointSecretaries: [person("Shaurya"), person("Chitragda")],
