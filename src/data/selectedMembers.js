@@ -75,11 +75,6 @@ export const selectedMembers = [
     departments: ["SM and Publicity", "Event Management"],
   },
   {
-    id: "sel-ali-khan",
-    name: "Ali Khan",
-    departments: ["SM and Publicity", "Video Editing"],
-  },
-  {
     id: "sel-aman-kumar",
     name: "Aman Kumar",
     departments: ["Video Editing", "PR and Performance"],
