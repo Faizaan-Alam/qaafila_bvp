@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import { DATE_PLACEHOLDER, displayName, isFilled } from "../../utils/format";
+import { isFilled } from "../../utils/format";
+import WriteupWatermark from "./WriteupWatermark";
+
 export default function WriteupCard({ piece, layout = "journal" }) {
   if (layout === "row") {
     return (
@@ -14,9 +16,13 @@ export default function WriteupCard({ piece, layout = "journal" }) {
               {piece.title}
             </h3>
             <p className="mt-2 text-sm text-cream/55">
-              {displayName(piece.author, "Author forthcoming")}
-              <span className="mx-2 text-gold/50">/</span>
-              {isFilled(piece.date) ? piece.date : DATE_PLACEHOLDER}
+              Written by {piece.author}
+              {isFilled(piece.date) ? (
+                <>
+                  <span className="mx-2 text-gold/50">/</span>
+                  {piece.date}
+                </>
+              ) : null}
             </p>
           </div>
           <p className="kicker text-gold/80 hidden md:block">Read</p>
@@ -35,6 +41,7 @@ export default function WriteupCard({ piece, layout = "journal" }) {
             loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent" />
+          <WriteupWatermark compact />
           <div className="absolute bottom-0 inset-x-0 p-5">
             <p className="kicker text-cream">{piece.category}</p>
             <h3 className="mt-2 font-display text-2xl md:text-3xl text-cream leading-tight">
@@ -43,9 +50,7 @@ export default function WriteupCard({ piece, layout = "journal" }) {
           </div>
         </div>
         <p className="mt-4 text-cream/65 leading-relaxed">{piece.excerpt}</p>
-        <p className="mt-3 text-sm text-gold/75">
-          {displayName(piece.author, "Author forthcoming")}
-        </p>
+        <p className="mt-3 text-sm text-gold/75">Written by {piece.author}</p>
         <p className="mt-3 kicker text-gold/80">Read</p>
       </Link>
     </article>

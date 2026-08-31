@@ -1,6 +1,13 @@
 import WriteupCard from "./WriteupCard";
 import Reveal from "../ui/Reveal";
 export default function WriteupGrid({ pieces, layout = "journal" }) {
+  if (!pieces.length) {
+    return (
+      <p className="font-display italic text-2xl text-parchment/80">
+        No write-ups in this column yet.
+      </p>
+    );
+  }
   if (layout === "row") {
     return (
       <div>
