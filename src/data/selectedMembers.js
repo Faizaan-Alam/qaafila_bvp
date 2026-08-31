@@ -61,7 +61,7 @@ export const selectedMembers = [
   },
   {
     id: "sel-aditya-kumar",
-    name: "Aditya Kumar",
+    name: "Aditya Kumar 1st year",
     departments: ["SM and Publicity", "Video Editing"],
   },
   {
@@ -170,8 +170,8 @@ export const selectedMembers = [
     departments: ["Podcast", "PR and Performance"],
   },
   {
-    id: "sel-garvit",
-    name: "Garvit",
+    id: "sel-garvit-saluja",
+    name: "Garvit Saluja",
     departments: ["SM and Publicity", "Event Management"],
   },
   {
