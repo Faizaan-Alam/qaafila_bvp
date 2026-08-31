@@ -1,11 +1,42 @@
 import poetry from "../assets/images/writeups/poetry.jpg";
 import culture from "../assets/images/writeups/culture.jpg";
+import opinions from "../assets/images/writeups/opinions.jpg";
 
 /**
  * Published journal entries only.
  * Covers live in src/assets/images/writeups/.
  */
 export const writeups = [
+  {
+    id: "w-poetry-03",
+    slug: "farebi-nazro-ka-sheher",
+    title: "Farebi nazro ka sheher",
+    author: "Anika Suri",
+    date: "August 2026",
+    category: "Poetry",
+    coverImage: opinions,
+    excerpt:
+      "Nahi dhoondna mujhe ishq iss jahaan mein, yha auratein jism bech de apni majboori ke samaan me.",
+    content: `
+<p>Nahi dhoondna mujhe ishq iss jahaan mein<br />
+Yha auratein jism bech de apni majboori ke samaan me</p>
+<p>Dekhte hain mard unhe un ghatiya nazron ke saath,<br />
+Phir bhi galti likh di jaati hai uss aurat ke hi naam</p>
+<p>Arre jahan sahi nazron wala mard milna bhi namumkin ho<br />
+Jahan hawas ko “knowledge” kehna hi ek naya qanoon ho</p>
+<p>Nahi chahiye, nahi chahiye aisa koi<br />
+Akele jee lungi magar nahi chahiye mujhe waisa koi</p>
+<p>Jise dusro ki izzat karna zindagi ka hissa na lage<br />
+Jo sirf apni premika ko hee izzat de</p>
+<p>Masoom ban kar ghoomte h, chehre pe sachai ka noor lie<br />
+Par andar se wahi soch chhupi ho jo sab kuch benoor kre</p>
+<p>Jo sabki izzat kare wo ab kahan milte h<br />
+Jo sabse ache lagte hai, wahi sabse bade farebi nikalte hai</p>
+`,
+    pullQuote: "Akele jee lungi magar nahi chahiye mujhe waisa koi",
+    readingMinutes: 2,
+    relatedSlugs: ["mard-ko-dikhao-mariyada", "dheeme-dhundh-se-janta-hun"],
+  },
   {
     id: "w-poetry-02",
     slug: "mard-ko-dikhao-mariyada",
@@ -41,7 +72,7 @@ Mariyada to mard ne likhi fir bhi khud na apnaya</p>
 `,
     pullQuote: "Us naari se kya ladoge?",
     readingMinutes: 2,
-    relatedSlugs: ["dheeme-dhundh-se-janta-hun"],
+    relatedSlugs: ["farebi-nazro-ka-sheher", "dheeme-dhundh-se-janta-hun"],
   },
   {
     id: "w-poetry-01",
