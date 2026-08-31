@@ -90,6 +90,11 @@ export const selectedMembers = [
     departments: ["Podcast", "PR and Performance"],
   },
   {
+    id: "sel-anjali",
+    name: "Anjali",
+    departments: ["Podcast", "PR and Performance"],
+  },
+  {
     id: "sel-ananya-chanana",
     name: "Ananya Chanana",
     departments: ["Content and Documentation", "PR and Performance"],
