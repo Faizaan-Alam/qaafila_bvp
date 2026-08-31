@@ -380,6 +380,11 @@ export const selectedMembers = [
     departments: ["Event Management", "Design"],
   },
   {
+    id: "sel-swati",
+    name: "Swati",
+    departments: ["Design"],
+  },
+  {
     id: "sel-tanisha",
     name: "Tanisha",
     departments: ["PR and Performance", "Content and Documentation"],
