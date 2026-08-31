@@ -1,7 +1,7 @@
 export const selectedYear = "2026-27";
 
 /** Flip to true to publish the selected-members roster again. */
-export const resultsPublished = false;
+export const resultsPublished = true;
 
 export const selectedDepartments = [
   "All",
@@ -255,6 +255,11 @@ export const selectedMembers = [
     departments: ["SM and Publicity", "Content and Documentation"],
   },
   {
+    id: "sel-naitik",
+    name: "Naitik",
+    departments: ["Video Editing", "Design"],
+  },
+  {
     id: "sel-niket",
     name: "Niket",
     departments: ["Event Management"],
@@ -288,6 +293,11 @@ export const selectedMembers = [
     id: "sel-pratham-sharma",
     name: "Pratham Sharma",
     departments: ["Event Management"],
+  },
+  {
+    id: "sel-preet-balyan",
+    name: "Preet Balyan",
+    departments: ["Video Editing", "Design"],
   },
   {
     id: "sel-prince-mishra",
@@ -355,6 +365,11 @@ export const selectedMembers = [
     departments: ["Design", "Content and Documentation"],
   },
   {
+    id: "sel-sneha",
+    name: "Sneha",
+    departments: ["PR and Performance", "Design"],
+  },
+  {
     id: "sel-somil-garg",
     name: "Somil Garg",
     departments: ["SM and Publicity", "Event Management"],
@@ -368,6 +383,11 @@ export const selectedMembers = [
     id: "sel-sumit",
     name: "Sumit",
     departments: ["Event Management", "Design"],
+  },
+  {
+    id: "sel-tanisha",
+    name: "Tanisha",
+    departments: ["PR and Performance", "Content and Documentation"],
   },
   {
     id: "sel-tanisha-sharma",
@@ -390,9 +410,9 @@ export const selectedMembers = [
     departments: ["Podcast"],
   },
   {
-    id: "sel-tushti",
-    name: "Tushti",
-    departments: ["Content and Documentation", "PR and Performance"],
+    id: "sel-tushti-arya",
+    name: "Tushti Arya",
+    departments: ["Podcast", "Event Management"],
   },
   {
     id: "sel-vaibhav",
