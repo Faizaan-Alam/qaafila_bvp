@@ -23,7 +23,7 @@ import { events } from "../data/events";
 import { writeups } from "../data/writeups";
 import { memories } from "../data/memories";
 import { site } from "../data/site";
-import { selectedMembers } from "../data/selectedMembers";
+import { resultsPublished, selectedMembers } from "../data/selectedMembers";
 export default function Home() {
   return (
     <>
@@ -99,8 +99,9 @@ export default function Home() {
             roman="IV"
           />
           <p className="mt-10 max-w-2xl text-cream/70 leading-relaxed">
-            {selectedMembers.length} people, across social media, events,
-            design, video, the podcast, content, and performance.
+            {resultsPublished
+              ? `${selectedMembers.length} people, across social media, events, design, video, the podcast, content, and performance.`
+              : "The selected list will be published here."}
           </p>
           <div className="mt-10">
             <Button to="/results">See the selected members</Button>
