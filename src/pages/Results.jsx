@@ -24,14 +24,14 @@ export default function Results() {
   return (
     <>
       <Seo
-        title="Selected members"
-        description={`The selected members of Qaafila for ${selectedYear}.`}
+        title="Results"
+        description={`Results for ${selectedYear}. The selected members of Qaafila.`}
         path="/results"
       />
       <PageShell>
         <SectionHeading
           kicker={selectedYear}
-          heading="Selected members"
+          heading="Results"
           subtitle="The people chosen to walk with Qaafila this year."
         />
         {resultsPublished ? (
