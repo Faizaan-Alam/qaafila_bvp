@@ -281,7 +281,7 @@ export const selectedMembers = [
   },
   {
     id: "sel-pavleen-gaur",
-    name: "Pavleen Gaur",
+    name: "Pavleen kaur",
     departments: ["SM and Publicity", "Event Management"],
   },
   {
