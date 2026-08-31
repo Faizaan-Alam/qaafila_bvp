@@ -255,6 +255,11 @@ export const selectedMembers = [
     departments: ["SM and Publicity", "Content and Documentation"],
   },
   {
+    id: "sel-mayank-cse-1",
+    name: "Mayank CSE 1",
+    departments: ["SM and Publicity", "Content and Documentation"],
+  },
+  {
     id: "sel-naitik",
     name: "Naitik",
     departments: ["Video Editing", "Design"],
