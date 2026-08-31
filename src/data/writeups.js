@@ -1,10 +1,48 @@
 import poetry from "../assets/images/writeups/poetry.jpg";
+import culture from "../assets/images/writeups/culture.jpg";
 
 /**
  * Published journal entries only.
  * Covers live in src/assets/images/writeups/.
  */
 export const writeups = [
+  {
+    id: "w-poetry-02",
+    slug: "mard-ko-dikhao-mariyada",
+    title: "Mard ko dikhao mariyada",
+    author: "Anika Suri",
+    date: "August 2026",
+    category: "Poetry",
+    coverImage: culture,
+    excerpt:
+      "Jo stree ka komal haath dekh tum uspe apna haath uthate ho, mat bhulna randh bhumi me wo ayi to harr path pr khoon dikhega.",
+    content: `
+<p>Jo stree ka komal haath dekh tum uspe apna haath uthate ho<br />
+Mat bhulna randh bhumi me wo ayi to harr path pr khoon dikhega</p>
+<p>Mardo ko mariyada dikhane pe usko majboor na krna<br />
+Mat bhulna agar wo laxmi bani to ban skti ma kaali bhi</p>
+<p>Raktbeej ka ant jo kar sakti hai<br />
+Us naari se kya ladoge?</p>
+<p>Jisne daanav ka ghamand toda<br />
+Use tum kaise rokoge?</p>
+<p>Mat bhulo aurat maange bas abhi tk samanta<br />
+Ayi wo apna hakk lene to pad jayega duniya me sookha</p>
+<p>Jo naari nikle bahar to narr ko hoga khatra<br />
+Umeed kro ki na palat jaye ye duniya</p>
+<p>Na dare aage jake purush, mahila se<br />
+Lekin agar ye desh na badla to badlega iss duniya ka harr kissa</p>
+<p>Darenge ladke ladkiyo se jo wo kaali ka roop nikla<br />
+Suno aurato utha lo shastra mat daro yu iss trh</p>
+<p>Jo tum bano draupadi to harr jgh na aa skenge Krishna<br />
+Bano khudke lie kaafi jo mard ka haath utha</p>
+<p>Kaat do uss haath ko na socho apni mariyada<br />
+Mariyada to mard ne likhi fir bhi khud na apnaya</p>
+<p>Aiso ke lie kya sochna apna ya paraya</p>
+`,
+    pullQuote: "Us naari se kya ladoge?",
+    readingMinutes: 2,
+    relatedSlugs: ["dheeme-dhundh-se-janta-hun"],
+  },
   {
     id: "w-poetry-01",
     slug: "dheeme-dhundh-se-janta-hun",
@@ -39,7 +77,7 @@ Main ab zindagi ko dheemi dhund se jaanta hoon.</p>
 `,
     pullQuote: "Main ab zindagi ko dheemi dhund se jaanta hoon.",
     readingMinutes: 2,
-    relatedSlugs: [],
+    relatedSlugs: ["mard-ko-dikhao-mariyada"],
   },
 ];
 
