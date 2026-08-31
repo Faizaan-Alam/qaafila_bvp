@@ -1,7 +1,7 @@
 export const selectedYear = "2026-27";
 
 /** Flip to true to publish the selected-members roster again. */
-export const resultsPublished = false;
+export const resultsPublished = true;
 
 export const selectedDepartments = [
   "All",
