@@ -310,8 +310,8 @@ export const selectedMembers = [
     departments: ["Event Management", "Podcast"],
   },
   {
-    id: "sel-priyanshu",
-    name: "Priyanshu",
+    id: "sel-priyanshu-swain",
+    name: "Priyanshu Swain",
     departments: ["SM and Publicity", "Event Management"],
   },
   {
