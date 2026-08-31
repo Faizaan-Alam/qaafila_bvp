@@ -11,6 +11,7 @@ import imgIsha from "../assets/images/members/isha.jpg";
 import imgMoksha from "../assets/images/members/moksha.jpg";
 import imgPaarth from "../assets/images/members/paarth.jpg";
 import imgRachit from "../assets/images/members/rachit.jpg";
+import imgRahul from "../assets/images/members/rahul.jpg";
 import imgRitesh from "../assets/images/members/ritesh.jpg";
 import imgRitvik from "../assets/images/members/ritvik.jpg";
 import imgVanshikaGoel from "../assets/images/members/vanshika-goel.jpg";
@@ -58,7 +59,7 @@ export const vicePresidents = [
   seat("vp-moksha", "Moksha", "Vice President", "", imgMoksha),
 ];
 export const culturalSecretaries = [
-  seat("cs-rahul", "Rahul", "Cultural Secretary"),
+  seat("cs-rahul", "Rahul", "Cultural Secretary", "", imgRahul),
   seat("cs-bhumika", "Bhumika", "Cultural Secretary"),
 ];
 export const generalSecretaries = [

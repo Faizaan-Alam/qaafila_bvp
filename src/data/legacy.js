@@ -3,6 +3,7 @@ import imgFaizaan from "../assets/images/members/faizaan.jpg";
 import imgIsha from "../assets/images/members/isha.jpg";
 import imgMoksha from "../assets/images/members/moksha.jpg";
 import imgNishchay from "../assets/images/legacy/nishchay.jpg";
+import imgRahul from "../assets/images/members/rahul.jpg";
 import imgRitesh from "../assets/images/members/ritesh.jpg";
 import imgSoumya from "../assets/images/legacy/soumya.jpg";
 
@@ -33,7 +34,7 @@ export const legacy = [
       person("Moksha", imgMoksha),
     ],
     generalSecretaries: [person("Harshtej"), person("Rachit")],
-    culturalSecretaries: [person("Rahul"), person("Bhumika")],
+    culturalSecretaries: [person("Rahul", imgRahul), person("Bhumika")],
   },
   {
     year: "2025-26",
