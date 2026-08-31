@@ -396,7 +396,7 @@ export const selectedMembers = [
   },
   {
     id: "sel-tanisha",
-    name: "Tanisha",
+    name: "Tanisha gupta",
     departments: ["PR and Performance", "Content and Documentation"],
   },
   {
