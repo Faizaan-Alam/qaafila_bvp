@@ -10,10 +10,12 @@ import imgHarshtej from "../assets/images/members/harshtej-2.jpg";
 import imgIsha from "../assets/images/members/isha.jpg";
 import imgMoksha from "../assets/images/members/moksha.jpg";
 import imgPaarth from "../assets/images/members/paarth.jpg";
+import imgPavitra from "../assets/images/members/pavitra.jpg";
 import imgRachit from "../assets/images/members/rachit.jpg";
 import imgRahul from "../assets/images/members/rahul.jpg";
 import imgRitesh from "../assets/images/members/ritesh.jpg";
 import imgRitvik from "../assets/images/members/ritvik.jpg";
+import imgSuhavi from "../assets/images/members/suhavi.jpg";
 import imgVanshikaGoel from "../assets/images/members/vanshika-goel.jpg";
 import imgVasvi from "../assets/images/members/vasvi.jpg";
 
@@ -128,7 +130,7 @@ export const headTeams = [
     title: "Video Editing",
     members: [
       seat("head-video-bharat", "Bharat", "Head", "Video Editing"),
-      seat("head-video-pavitra", "Pavitra", "Head", "Video Editing"),
+      seat("head-video-pavitra", "Pavitra", "Head", "Video Editing", imgPavitra),
     ],
   },
   {
@@ -141,7 +143,7 @@ export const headTeams = [
   {
     title: "Book Club",
     members: [
-      seat("head-book-suhavi", "Suhavi", "Head", "Book Club"),
+      seat("head-book-suhavi", "Suhavi", "Head", "Book Club", imgSuhavi),
       seat("head-book-paarth", "Paarth", "Head", "Book Club", imgPaarth),
     ],
   },
