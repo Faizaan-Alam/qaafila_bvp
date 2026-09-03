@@ -9,6 +9,7 @@ import {
   generalSecretaries,
   headTeams,
   ishaBhatti,
+  hod,
   president,
   teacherIncharge,
   vicePresidents,
@@ -29,7 +30,7 @@ export default function Execom() {
         />
 
         <div className="mt-12">
-          <TeacherIncharge member={teacherIncharge} />
+          <TeacherIncharge members={[hod, teacherIncharge]} />
         </div>
 
         <div className="mt-16">

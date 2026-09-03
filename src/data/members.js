@@ -36,6 +36,7 @@ function seat(id, name, position, department = "", image = "") {
  * Portraits live in src/assets/images/members/.
  * Source drops: core/, heads/, hall of fame/ at the repo root.
  */
+export const hod = seat("hod", "", "HOD");
 export const teacherIncharge = seat(
   "teacher-incharge",
   "Neetu",
