@@ -26,7 +26,7 @@ function FacultyCard({ member }) {
 export default function TeacherIncharge({ members }) {
   return (
     <div className="flex justify-end">
-      <div className="grid sm:grid-cols-2 gap-8 w-full max-w-2xl">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-4xl">
         {members.map((member, index) => (
           <Reveal key={member.id} delay={index * 0.05}>
             <FacultyCard member={member} />

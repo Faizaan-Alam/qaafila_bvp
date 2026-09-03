@@ -17,6 +17,7 @@ import {
   ishaBhatti,
   namedCoreCommittee,
   hod,
+  principal,
   teacherIncharge,
 } from "../data/members";
 import { legacy } from "../data/legacy";
@@ -58,7 +59,7 @@ export default function Home() {
             roman="II"
           />
           <div className="mt-12">
-            <TeacherIncharge members={[hod, teacherIncharge]} />
+            <TeacherIncharge members={[principal, hod, teacherIncharge]} />
           </div>
           <div className="mt-16">
             <PresidentCard member={president} />
