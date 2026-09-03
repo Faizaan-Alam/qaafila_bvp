@@ -4,6 +4,7 @@ export default function PortraitFrame({
   position,
   image,
   large = false,
+  compact = false,
 }) {
   const filled = isFilled(image);
   const label = isFilled(name) ? name : `${position} portrait forthcoming`;
@@ -19,14 +20,20 @@ export default function PortraitFrame({
           loading="lazy"
         />
       ) : (
-        <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 px-6 text-center">
+        <div
+          className={`absolute inset-0 flex flex-col items-center justify-center text-center ${
+            compact ? "gap-1 px-2" : "gap-4 px-6"
+          }`}
+        >
           <span
-            className="font-display text-5xl text-gold/50"
+            className={`font-display text-gold/50 ${compact ? "text-2xl" : "text-5xl"}`}
             aria-hidden="true"
           >
             {memberInitials({ name, position })}
           </span>
-          <span className="kicker text-gold/55">Portrait forthcoming</span>
+          {compact ? null : (
+            <span className="kicker text-gold/55">Portrait forthcoming</span>
+          )}
         </div>
       )}
       <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-gold/20" />
