@@ -26,7 +26,7 @@ export default function PortraitFrame({
           }`}
         >
           <span
-            className={`font-display text-gold/50 ${compact ? "text-2xl" : "text-5xl"}`}
+            className={`font-display text-gold/50 ${compact ? "text-3xl" : "text-5xl"}`}
             aria-hidden="true"
           >
             {memberInitials({ name, position })}
